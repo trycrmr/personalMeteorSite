@@ -1,14 +1,83 @@
 <head>
-  <title>trycreamr</title>
+    <title>Terry Creamer</title>
+    <!--trycrmrs CUSTOM STYLES-->
+    <link type="text/css" rel="trycreamr.css">
+    <!--END trycrmrs CUSTOM STYLES-->
+    <!--trycrmr IMPORTED STYLES-->
+    <!-- Latest compiled and minified CSS -->
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/css/style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+    <!--
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/font-awesome.css">     
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/css/font-awesome.css">
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.eot">
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.svg">
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.ttf">
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.woff">
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.woff2">
+    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/FontAwesome.otf">
+    -->
+    <!--trycrmr END IMPORTED STYLES-->
 </head>
-
 <body>
-  <h1>Welcome to trycrmr! 150702</h1>
-
-  {{> hello}}
+    <div class="container">
+        <div class="row">{{> header}} {{> navigation}}</div>
+        <div class="row">{{> profile}}</div>
+        <div class="rwo">{{> credits}}</div>
+    </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="header">
+    <div class="well">Welcome to Terry's Personal Site!</div>
+    <!--END WELL-->
+</template>
+
+<template name="navigation">
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+        </ul>
+    </div>
+    <!--END NAVBAR-->
+</template>
+
+<template name="profile">
+    <div class="imgFrame"> 
+        <div class="profileImg">
+            <img src="profileImg.jpg" alt="Terrys Profile Picture">
+            <div class="profileImg"></div>
+        </div>
+        <div class="profileDescription">
+        {{> profileDescription}}
+        </div>
+        <div class="GroupSocialMedia">
+            {{> socialMediaIcons}}
+        </div>
+    </div>
+</template>
+
+<template name="profileDescription">
+Terry recently has had the pleasure of using the Oracle WebCenter Product Suite (specifically Oracle WebCenter Content and Oracle WebCenter Portal) to build a document storage and search solution, assisting a Navy System Command with their rollout of Oracle WebCenter Portal, developing Java Server Pages/Components within Adobe CQ, implementing SharePoint 2010 solutions with his SCRUM Team, and performing Project Management/SDLC/508 Compliance activities on Business Intelligence/Data Warehousing project. His work as an Adobe CQ Developer involved extending Adobe CQ to meet client requirements using Java to access Adobe CQ’s API and front-end web technologies (HTML, CSS, and JavaScript) to call and present the results (accounting for appropriate browser compatibility). Currently he is interested in helping his client’s take full advantage of their Enterprise and Web Content Management Systems to facilitate internal processes, enhance reporting capabilities, and service external stakeholders. His next ambition is to gain experience standing up custom web applications to accommodate his interest in front-end frameworks and different Platform as a Service offerings. Before starting in his current role with Deloitte Terry actively pursued his interest in website design, development, and web analytics.
+</template>
+
+<template name="socialMediaIcons">
+<a href="https://www.linkedin.com/in/terencecreamer" class="btn azm-social azm-size-48 azm-r-square azm-linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/TerenceCream" class="btn azm-social azm-size-48 azm-r-square azm-facebook"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/terrycream" class="btn azm-social azm-size-48 azm-r-square azm-twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://github.com/trycrmr" class="btn azm-social azm-size-48 azm-r-square azm-github"><i class="fa fa-github"></i></a>
+
+</template>
+
+<template name="credits">
+<div class="credits">
+    <div class="well">Credits (Thanks!)
+    <ul><li><a href="http://azmind.com/2015/02/05/bootstrap-social-icons/" alt="Social Media Icons">Social Media Icons</a></li></ul>
+    </div>
+    </div>
 </template>
