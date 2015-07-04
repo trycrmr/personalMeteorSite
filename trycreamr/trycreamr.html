@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
  
     <!--
@@ -25,13 +26,17 @@
     -->
     <!--trycrmr END IMPORTED STYLES-->
 </head>
+
+<!--PAGE STRUCTURE-->
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">{{> header}} {{> navigation}}</div>
         <div class="row">{{> profile}}</div>
-        <div class="rwo">{{> credits}}</div>
+        <div class="row">{{> credits}}</div>
     </div>
 </body>
+
+
 
 <template name="header">
     <div class="well">Welcome to Terry's Personal Site!</div>
@@ -71,7 +76,6 @@ Terry recently has had the pleasure of using the Oracle WebCenter Product Suite 
     <a href="https://www.facebook.com/TerenceCream" class="btn azm-social azm-size-48 azm-r-square azm-facebook"><i class="fa fa-facebook"></i></a>
 <a href="https://twitter.com/terrycream" class="btn azm-social azm-size-48 azm-r-square azm-twitter"><i class="fa fa-twitter"></i></a>
     <a href="https://github.com/trycrmr" class="btn azm-social azm-size-48 azm-r-square azm-github"><i class="fa fa-github"></i></a>
-
 </template>
 
 <template name="credits">
