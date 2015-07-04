@@ -31,7 +31,6 @@
 <body>
     <div class="container-fluid">
         <div class="row">{{> header}} {{> navigation}}</div>
-        Matthew!!!
         <div class="row">{{> profile}}</div>
         <div class="row">{{> credits}}</div>
     </div>
@@ -52,9 +51,8 @@
     <!--END NAVBAR-->
 </template>
 
-<template name="profile">
-    <div class="imgFrame"> 
-        <div class="profileImg">
+<template name="profile"> 
+        <div class="profileImg col-xs-12 col-sm-3">
             <img src="profileImg.jpg" alt="Terrys Profile Picture">
             <div class="profileImg"></div>
         </div>
@@ -64,7 +62,6 @@
         <div class="GroupSocialMedia">
             {{> socialMediaIcons}}
         </div>
-    </div>
 </template>
 
 <template name="profileDescription">
