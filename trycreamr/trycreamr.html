@@ -1,4 +1,5 @@
 <head>
+    
     <title>Terry Creamer</title>
     <!--trycrmrs CUSTOM STYLES-->
     <link type="text/css" rel="trycreamr.css">
@@ -13,27 +14,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
- 
-    <!--
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/font-awesome.css">     
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/css/font-awesome.css">
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.eot">
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.svg">
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.ttf">
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.woff">
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/fontawesome-webfont.woff2">
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/font-awesome/fonts/FontAwesome.otf">
-    -->
     <!--trycrmr END IMPORTED STYLES-->
+
 </head>
 
 <!--PAGE STRUCTURE-->
 <body>
+    <nav class="navbar navbar-default">
     <div class="container-fluid">
-        <div class="row">{{> header}} {{> navigation}}</div>
+        <div class="row">{{> header}}</div>
         <div class="row">{{> profile}}</div>
         <div class="row">{{> credits}}</div>
     </div>
+</nav>
 </body>
 
 
@@ -43,11 +36,13 @@
 </template>
 
 <template name="navigation">
-    <div class="navbar">
-        <ul>
-            <li>Home</li>
-        </ul>
-    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="button" class="btn btn-default navbar-btn col-xs-12 col-sm-2">Button</button>
+<button type="button" class="btn btn-default navbar-btn col-xs-12 col-sm-2 col-sm-offset-1">Button</button>
+        <button type="button" class="btn btn-default navbar-btn col-xs-12 col-sm-2 col-sm-offset-1">Button</button>
+        </div>
+</div>        
     <!--END NAVBAR-->
 </template>
 
