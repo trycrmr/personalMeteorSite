@@ -1,20 +1,15 @@
 <head>
-    
     <title>Terry Creamer</title>
-    <!--trycrmrs CUSTOM STYLES-->
-    <link type="text/css" rel="trycreamr.css">
-    <!--END trycrmrs CUSTOM STYLES-->
-    <!--trycrmr IMPORTED STYLES-->
-    <!-- Latest compiled and minified CSS -->
-    <link type="text/css" rel="lib/bootstrap-social-icons/assets/css/style.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!--trycrmr END IMPORTED STYLES-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link type="text/css" rel="stylesheet" href="trycreamr.css">
+    <link type="text/css" href="client/lib/bootstrap-3.3.5-dist/css/bootstrap.css">
+        <link type="text/css" href="client/lib/bootstrap-social-icons/assets/css/style.css">
+
+    <script src="client/lib/jquery-1.11.3.js"></script>
+        <script src="client/lib/bootstrap-3.3.5-dist/js/bootstrap.js"></script> 
+<!--<link type="text/css" rel="stylesheet" href="client/lib/font-awesome-4.3.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -24,15 +19,13 @@
     <div class="container-fluid">
         <div class="row">{{> header}}</div>
         <div class="row">{{> profile}}</div>
-        <div class="row">{{> credits}}</div>
+        <div class="row">{{> panelCredits}}</div>
     </div>
 </nav>
 </body>
 
-
 <template name="header">
     <div class="well">Welcome to Terry's Personal Site!</div>
-    <!--END WELL-->
 </template>
 
 <template name="navigation">
@@ -46,10 +39,11 @@
     <!--END NAVBAR-->
 </template>
 
-<template name="profile"> 
+<template name="profile">
+    <div class="row">
+        <div class="col-sm-12">
         <div class="profileImg col-xs-12 col-sm-3">
             <img src="profileImg.jpg" alt="Terrys Profile Picture">
-            <div class="profileImg"></div>
         </div>
         <div class="profileDescription">
         {{> profileDescription}}
@@ -57,6 +51,8 @@
         <div class="GroupSocialMedia">
             {{> socialMediaIcons}}
         </div>
+        </div>
+    </div>
 </template>
 
 <template name="profileDescription">
@@ -69,6 +65,16 @@ Terry recently has had the pleasure of using the Oracle WebCenter Product Suite 
 <a href="https://twitter.com/terrycream" class="btn azm-social azm-size-48 azm-r-square azm-twitter"><i class="fa fa-twitter"></i></a>
     <a href="https://github.com/trycrmr" class="btn azm-social azm-size-48 azm-r-square azm-github"><i class="fa fa-github"></i></a>
 </template>
+
+<template name="panelCredits">
+<div class="panel panel-default text-center">
+  <div class="panel-heading">Credits (Thanks!)
+    <p><a href="http://azmind.com/2015/02/05/bootstrap-social-icons/" target="_blank" alt="Social Media Icons">Social Media Icons</a></p>
+      </div>
+  </div>
+</template>
+
+<!--DEPRECATED TEMPLATES-->
 
 <template name="credits">
 <div class="credits">
