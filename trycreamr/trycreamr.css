@@ -1,5 +1,12 @@
+body {
+ background-color: #000433;
+color: aliceblue;
+}
+
 .container-fluid {
  width: 90%;
+/*background: linear-gradient(skyblue, blue);*/
+
 }/* CSS declarations go here */
 
 .well {
@@ -20,7 +27,8 @@
 }
 
 .profileDescription {
- text-align: center;
+/* text-align: center;*/
+    font-size: larger;
 }
 
 .GroupSocialMedia {
@@ -28,6 +36,14 @@
  text-align: center;   
 }
 
+a {   
+  color: aliceblue;
+}
+
+a:focus,
+a:hover {
+  color: aliceblue;   
+}
 /********************* Icons **************************/
 
 .azm-social {

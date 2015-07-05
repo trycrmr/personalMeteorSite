@@ -1,7 +1,6 @@
 <head>
     <title>Terry Creamer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link type="text/css" rel="stylesheet" href="trycreamr.css">
+
     <link type="text/css" href="client/lib/bootstrap-3.3.5-dist/css/bootstrap.css">
         <link type="text/css" href="client/lib/bootstrap-social-icons/assets/css/style.css">
 
@@ -9,29 +8,32 @@
         <script src="client/lib/bootstrap-3.3.5-dist/js/bootstrap.js"></script> 
 <!--<link type="text/css" rel="stylesheet" href="client/lib/font-awesome-4.3.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link type="text/css" rel="stylesheet" href="trycreamr.css">    
 
 
 </head>
 
 <!--PAGE STRUCTURE-->
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar">
     <div class="container-fluid">
         <div class="row">{{> header}}</div>
         <div class="row">{{> profile}}</div>
-        <div class="row">{{> panelCredits}}</div>
+        <div class="row">{{> credits}}</div>
     </div>
 </nav>
 </body>
 
 <template name="header">
-    <div class="well">Welcome to Filip's Personal Site!</div>
+    <h3 class="text-center">Welcome to Terry's Personal Site!</h3>
 </template>
 
 <template name="navigation">
     <div class="row">
         <div class="col-sm-12">
             <button type="button" class="btn btn-default navbar-btn col-xs-12 col-sm-2">Button</button>
+            <button type="button" class="btn azm-social azm-btn azm-facebook col-xs-12 col-sm-2"><i class="fa fa-facebook">Facebook</i></button>            
 <button type="button" class="btn btn-default navbar-btn col-xs-12 col-sm-2 col-sm-offset-1">Button</button>
         <button type="button" class="btn btn-default navbar-btn col-xs-12 col-sm-2 col-sm-offset-1">Button</button>
         </div>
@@ -56,27 +58,35 @@
 </template>
 
 <template name="profileDescription">
-Terry recently has had the pleasure of using the Oracle WebCenter Product Suite (specifically Oracle WebCenter Content and Oracle WebCenter Portal) to build a document storage and search solution, assisting a Navy System Command with their rollout of Oracle WebCenter Portal, developing Java Server Pages/Components within Adobe CQ, implementing SharePoint 2010 solutions with his SCRUM Team, and performing Project Management/SDLC/508 Compliance activities on Business Intelligence/Data Warehousing project. His work as an Adobe CQ Developer involved extending Adobe CQ to meet client requirements using Java to access Adobe CQ’s API and front-end web technologies (HTML, CSS, and JavaScript) to call and present the results (accounting for appropriate browser compatibility). Currently he is interested in helping his client’s take full advantage of their Enterprise and Web Content Management Systems to facilitate internal processes, enhance reporting capabilities, and service external stakeholders. His next ambition is to gain experience standing up custom web applications to accommodate his interest in front-end frameworks and different Platform as a Service offerings. Before starting in his current role with Deloitte Terry actively pursued his interest in website design, development, and web analytics.
+<p>Terry recently has had the pleasure of using the Oracle WebCenter Product Suite (specifically Oracle WebCenter Content and Oracle WebCenter Portal) to build a document storage and search solution, assisting a Navy System Command with their rollout of Oracle WebCenter Portal, developing Java Server Pages/Components within Adobe CQ, implementing SharePoint 2010 solutions with his SCRUM Team, and performing Project Management/SDLC/508 Compliance activities on Business Intelligence/Data Warehousing project.</p><p>His work as an Adobe CQ Developer involved extending Adobe CQ to meet client requirements using Java to access Adobe CQ’s API and front-end web technologies (HTML, CSS, and JavaScript) to call and present the results (accounting for appropriate browser compatibility). Currently he is interested in helping his client’s take full advantage of their Enterprise and Web Content Management Systems to facilitate internal processes, enhance reporting capabilities, and service external stakeholders.</p><p>His next ambition is to gain experience standing up custom web applications to accommodate his interest in open source web frameworks (front and back-end) and different Platform as a Service offerings. Before starting in his current role with Deloitte Terry actively pursued his interest in website design, development, and web analytics. This site was built using an instance of MeteorJS (Blaze front-end) hosted on Heroku. Any thoughts on <a href="https://github.com/trycrmr" target="_blank">the code</a> would be much appreciated!</p>
 </template>
 
 <template name="socialMediaIcons">
-<a href="https://www.linkedin.com/in/terencecreamer" class="btn azm-social azm-size-48 azm-r-square azm-linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="https://www.facebook.com/TerenceCream" class="btn azm-social azm-size-48 azm-r-square azm-facebook"><i class="fa fa-facebook"></i></a>
-<a href="https://twitter.com/terrycream" class="btn azm-social azm-size-48 azm-r-square azm-twitter"><i class="fa fa-twitter"></i></a>
-    <a href="https://github.com/trycrmr" class="btn azm-social azm-size-48 azm-r-square azm-github"><i class="fa fa-github"></i></a>
+<a href="https://www.linkedin.com/in/terencecreamer" class="btn azm-social azm-size-48 azm-r-square azm-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/TerenceCream" class="btn azm-social azm-size-48 azm-r-square azm-facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/terrycream" class="btn azm-social azm-size-48 azm-r-square azm-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://github.com/trycrmr" class="btn azm-social azm-size-48 azm-r-square azm-github"  target="_blank"><i class="fa fa-github"></i></a>
 </template>
+
+<template name="credits">
+    <div class="text-center h6">
+<p>Credits (Thanks!)</p>
+    <p>
+        <a href="https://www.meteor.com/features" target="_blank" alt="Built using MeteorJS">MeteorJS</a></p><p><a href="https://www.heroku.com/" target="_blank" alt="Hosted with Heroku">Heroku</a></p><p><a href="http://azmind.com/2015/02/05/bootstrap-social-icons/" target="_blank" alt="Social Media Icons">Social Media Icons</a></p>
+</div>
+</template>
+
+<!--DEPRECATED TEMPLATES-->
 
 <template name="panelCredits">
 <div class="panel panel-default text-center">
-  <div class="panel-heading">Credits (Thanks!)
+  <div class="panel-heading"><h6>Credits (Thanks!)</h6>
     <p><a href="http://azmind.com/2015/02/05/bootstrap-social-icons/" target="_blank" alt="Social Media Icons">Social Media Icons</a></p>
       </div>
   </div>
 </template>
 
-<!--DEPRECATED TEMPLATES-->
-
-<template name="credits">
+<template name="Xcredits">
 <div class="credits">
     <div class="well">Credits (Thanks!)
     <ul><li><a href="http://azmind.com/2015/02/05/bootstrap-social-icons/" alt="Social Media Icons">Social Media Icons</a></li></ul>
